@@ -59,9 +59,10 @@ jobs:
           name: pal-tracker-distributed
       - name: Deploy to cf
         run: |
-          cf api "$CF_API_URL"
-          cf auth
-          cf target -o "$CF_ORG" -s "$CF_SPACE"
+          cf login -a "$CF_API_URL" -o "$CF_ORG" -s "$CF_SPACE" -u "$CF_USERNAME" -p "$CF_PASSWORD"
+#          cf api "$CF_API_URL"
+#          cf auth
+#          cf target -o "$CF_ORG" -s "$CF_SPACE"
           cf push -f ./manifest-allocations.yml -p ./pal-tracker-distributed/allocations-server.jar
         env:
           CF_API_URL: ${{ secrets.CF_API_URL }}
@@ -87,9 +88,10 @@ jobs:
           name: pal-tracker-distributed
       - name: Deploy to cf
         run: |
-          cf api "$CF_API_URL"
-          cf auth
-          cf target -o "$CF_ORG" -s "$CF_SPACE"
+          cf login -a "$CF_API_URL" -o "$CF_ORG" -s "$CF_SPACE" -u "$CF_USERNAME" -p "$CF_PASSWORD"
+#          cf api "$CF_API_URL"
+#          cf auth
+#          cf target -o "$CF_ORG" -s "$CF_SPACE"
           cf push -f ./manifest-backlog.yml -p ./pal-tracker-distributed/backlog-server.jar
         env:
           CF_API_URL: ${{ secrets.CF_API_URL }}
@@ -115,9 +117,10 @@ jobs:
           name: pal-tracker-distributed
       - name: Deploy to cf
         run: |
-          cf api "$CF_API_URL"
-          cf auth
-          cf target -o "$CF_ORG" -s "$CF_SPACE"
+          cf login -a "$CF_API_URL" -o "$CF_ORG" -s "$CF_SPACE" -u "$CF_USERNAME" -p "$CF_PASSWORD"
+#          cf api "$CF_API_URL"
+#          cf auth
+#          cf target -o "$CF_ORG" -s "$CF_SPACE"
           cf push -f ./manifest-registration.yml -p ./pal-tracker-distributed/registration-server.jar
         env:
           CF_API_URL: ${{ secrets.CF_API_URL }}
@@ -143,9 +146,10 @@ jobs:
           name: pal-tracker-distributed
       - name: Deploy to cf
         run: |
-          cf api "$CF_API_URL"
-          cf auth
-          cf target -o "$CF_ORG" -s "$CF_SPACE"
+          cf login -a "$CF_API_URL" -o "$CF_ORG" -s "$CF_SPACE" -u "$CF_USERNAME" -p "$CF_PASSWORD"
+#          cf api "$CF_API_URL"
+#          cf auth
+#          cf target -o "$CF_ORG" -s "$CF_SPACE"
           cf push -f ./manifest-timesheets.yml -p ./pal-tracker-distributed/timesheets-server.jar
         env:
           CF_API_URL: ${{ secrets.CF_API_URL }}
