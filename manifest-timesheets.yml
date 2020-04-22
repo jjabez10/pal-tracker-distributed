@@ -8,6 +8,9 @@ applications:
   env:
 #    REGISTRATION_SERVER_ENDPOINT: https://registration-pal-155870-pal-trackerdist.cfapps.io
     JBP_CONFIG_OPEN_JDK_JRE: '{ jre: { version: 11.+ } }'
+    GRANT_TYPE: client_credentials
   services:
   - tracker-timesheets-database
   - tracker-service-registry
+  - tracker-sso
+  - tracker-config-server
