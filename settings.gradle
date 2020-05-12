@@ -25,4 +25,7 @@ include "integration-test"
 include "platform-services:oauth-server"
 //findProject(':platform-services:oauth-server')?.name = 'oauth-server'
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> 0f15115229d33da45dbe67a7a84e86214360e5b0

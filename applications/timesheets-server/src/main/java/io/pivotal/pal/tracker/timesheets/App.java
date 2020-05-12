@@ -5,17 +5,23 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ComponentScan;
+<<<<<<< HEAD
 import org.springframework.security.config.annotation.web.configuration.EnableWebSecurity;
 import org.springframework.security.oauth2.config.annotation.web.configuration.EnableOAuth2Client;
 import org.springframework.security.oauth2.config.annotation.web.configuration.EnableResourceServer;
+=======
+>>>>>>> 0f15115229d33da45dbe67a7a84e86214360e5b0
 import org.springframework.web.client.RestOperations;
 import org.springframework.cloud.netflix.eureka.EnableEurekaClient;
 
 import java.util.TimeZone;
 
+<<<<<<< HEAD
 @EnableWebSecurity
 @EnableResourceServer
 @EnableOAuth2Client
+=======
+>>>>>>> 0f15115229d33da45dbe67a7a84e86214360e5b0
 @EnableEurekaClient
 @SpringBootApplication
 @ComponentScan({"io.pivotal.pal.tracker.timesheets", "io.pivotal.pal.tracker.restsupport"})

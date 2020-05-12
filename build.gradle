@@ -4,8 +4,11 @@ buildscript {
     ext {
         springCloudVersion = "Finchley.SR3"
         springCloudServicesClientLibrariesVersion ="2.0.1.RELEASE"
+<<<<<<< HEAD
         springSecurityOAuthAutoconfigVersion = "2.1.0.RELEASE"
         springCloudSsoVersion = "2.1.3.RELEASE"
+=======
+>>>>>>> 0f15115229d33da45dbe67a7a84e86214360e5b0
         springBootVersion = "2.0.6.RELEASE"
         springVersion = "5.0.9.RELEASE"
         mysqlVersion = "8.0.13"

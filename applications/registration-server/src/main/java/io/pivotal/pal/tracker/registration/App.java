@@ -4,6 +4,7 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.cloud.netflix.eureka.EnableEurekaClient;
+<<<<<<< HEAD
 import org.springframework.security.config.annotation.web.configuration.EnableWebSecurity;
 import org.springframework.security.oauth2.config.annotation.web.configuration.EnableOAuth2Client;
 import org.springframework.security.oauth2.config.annotation.web.configuration.EnableResourceServer;
@@ -13,6 +14,13 @@ import java.util.TimeZone;
 @EnableWebSecurity
 @EnableResourceServer
 @EnableOAuth2Client
+=======
+
+
+import java.util.TimeZone;
+
+
+>>>>>>> 0f15115229d33da45dbe67a7a84e86214360e5b0
 @EnableEurekaClient
 @SpringBootApplication
 @ComponentScan({

@@ -6,6 +6,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.cloud.netflix.eureka.EnableEurekaClient;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ComponentScan;
+<<<<<<< HEAD
 import org.springframework.security.config.annotation.web.configuration.EnableWebSecurity;
 import org.springframework.security.oauth2.config.annotation.web.configuration.EnableOAuth2Client;
 import org.springframework.security.oauth2.config.annotation.web.configuration.EnableResourceServer;
@@ -15,6 +16,13 @@ import java.util.TimeZone;
 @EnableWebSecurity
 @EnableResourceServer
 @EnableOAuth2Client
+=======
+import org.springframework.web.client.RestOperations;
+
+import java.util.TimeZone;
+
+
+>>>>>>> 0f15115229d33da45dbe67a7a84e86214360e5b0
 @EnableEurekaClient
 @SpringBootApplication
 @ComponentScan({"io.pivotal.pal.tracker.allocations", "io.pivotal.pal.tracker.restsupport"})
